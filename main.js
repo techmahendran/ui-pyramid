@@ -1,3 +1,5 @@
+// Pyramid
+
 const map = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
 function getPyramid(rows) {
@@ -19,3 +21,18 @@ function getPyramid(rows) {
 }
 
 console.log(getPyramid(6));
+
+// Remove repeat char string
+
+function removeCharacterStrig(string) {
+    return string.split('')
+    .filter(function(item,pos,slef){
+
+        return slef.indexOf(item) == pos;
+
+    }).join('');
+}
+
+console.log(removeCharacterStrig('remove Character strig'));
+
+
